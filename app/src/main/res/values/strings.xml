@@ -1,0 +1,228 @@
+<resources>
+    <string name="app_name">Tour Kit</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+    <string name="details">বিবরণ</string>
+
+
+    <string-array name="State_array">
+        <item>DHAKA.</item>
+        <item>CHITTAGONG.</item>
+        <item>RAJSHAHI.</item>
+        <item> SYLHET.</item>
+        <item>BARISAL.</item>
+        <item>KHULNA.</item>
+        <item>RANGPUR.</item>
+        <item> MYMENSINGH.</item>
+
+    </string-array>
+    //then cities array for each states, like
+    <string-array name="Dhaka_array_filter">
+        <item>All</item>
+        <item>DHAKA.</item>
+        <item>GAZIPUR.</item>
+        <item>NARAYANGONJ.</item>
+        <item>NARSINGDI.</item>
+        <item>KISHOREGANJ.</item>
+        <item>TANGAIL.</item>
+        <item>FARIDPUR.</item>
+        <item>RAJBARI.</item>
+        <item>MUNSHIGANJ</item>
+        <item>GOPALGANJ.</item>
+        <item> MADARIPUR.</item>
+        <item>MANIKGANJ.</item>
+        <item> SHARIATPUR.</item>
+
+    </string-array>
+    <string-array name="Chittagong_array_filter">
+        <item>All</item>
+        <item>CHITTAGONG.</item>
+        <item>COX,S BAZAR.</item>
+        <item>KHAGRACHHARI.</item>
+        <item>RANGAMATI.</item>
+        <item>BANDARBAN.</item>
+        <item>COMILLA.</item>
+        <item>NOAKHALI.</item>
+        <item>LAKSHMIPUR.</item>
+        <item>CHANDPUR.</item>
+        <item> FENI.</item>
+        <item>BRAHMANBARIA.</item>
+    </string-array>
+    <string-array name="Rajshashi_array_filter">
+        <item>All</item>
+        <item>RAJSHAHI.</item>
+        <item>SIRAJGANJ.</item>
+        <item>BOGRA.</item>
+        <item>PABNA.</item>
+        <item>CHAPAINAWABGANJ.</item>
+        <item>NATORE.</item>
+        <item>JOYPURHAT.</item>
+        <item>NAOGAON.</item>
+
+    </string-array>
+    <string-array name="Sylhet_array_filter">
+        <item>All</item>
+        <item>SYLHET.</item>
+        <item>SUNAMGANJ.</item>
+        <item>MOULVIBAZAR.</item>
+        <item>HABIGANJ.</item>
+    </string-array>
+    <string-array name="Barishal_array_filter">
+        <item>All</item>
+        <item>BARISAL.</item>
+        <item>PATUAKHALI.</item>
+        <item>PIROJPUR.</item>
+        <item>JHALOKATI.</item>
+        <item>BHOLA.</item>
+        <item>BARGUNA.</item>
+    </string-array>
+    <string-array name="Rangpur_array_filter">
+        <item>All</item>
+        <item>RANGPUR.</item>
+        <item>DINAJPUR.</item>
+        <item>GAIBANDHA.</item>
+        <item>KURIGRAM.</item>
+        <item>LALMONIRHAT.</item>
+        <item>NILPHAMARI.</item>
+        <item>PANCHAGARH.</item>
+        <item>THAKURGAON.</item>
+    </string-array>
+    <string-array name="Khulna_array_filter">
+        <item>All</item>
+        <item>KHULNA.</item>
+        <item>BAGERHAT.</item>
+        <item>CHUADANGA.</item>
+        <item>JESSORE.</item>
+        <item>JHENAIDAH.</item>
+        <item>KUSHTIA.</item>
+        <item>MAGURA.</item>
+        <item>MEHERPUR.</item>
+        <item>NARAIL.</item>
+        <item> SATKHIRA.</item>
+    </string-array>
+    <string-array name="Mymensingh_array_filter">
+        <item>All</item>
+        <item>MYMENSINGH.</item>
+        <item>SHERPUR.</item>
+        <item>JAMALPUR.</item>
+        <item>NETROKONA.</item>
+    </string-array>
+
+
+    <string-array name="Dhaka_array">
+        <item>DHAKA.</item>
+        <item>GAZIPUR.</item>
+        <item>NARAYANGONJ.</item>
+        <item>NARSINGDI.</item>
+        <item>KISHOREGANJ.</item>
+        <item>TANGAIL.</item>
+        <item>FARIDPUR.</item>
+        <item>RAJBARI.</item>
+        <item>MUNSHIGANJ</item>
+        <item>GOPALGANJ.</item>
+        <item> MADARIPUR.</item>
+        <item>MANIKGANJ.</item>
+        <item> SHARIATPUR.</item>
+
+    </string-array>
+    <string-array name="Chittagong_array">
+        <item>CHITTAGONG.</item>
+        <item>COX,S BAZAR.</item>
+        <item>KHAGRACHHARI.</item>
+        <item>RANGAMATI.</item>
+        <item>BANDARBAN.</item>
+        <item>COMILLA.</item>
+        <item>NOAKHALI.</item>
+        <item>LAKSHMIPUR.</item>
+        <item>CHANDPUR.</item>
+        <item> FENI.</item>
+        <item>BRAHMANBARIA.</item>
+    </string-array>
+    <string-array name="Rajshashi_array">
+        <item>RAJSHAHI.</item>
+        <item>SIRAJGANJ.</item>
+        <item>BOGRA.</item>
+        <item>PABNA.</item>
+        <item>CHAPAINAWABGANJ.</item>
+        <item>NATORE.</item>
+        <item>JOYPURHAT.</item>
+        <item>NAOGAON.</item>
+
+    </string-array>
+    <string-array name="Sylhet_array">
+        <item>SYLHET.</item>
+        <item>SUNAMGANJ.</item>
+        <item>MOULVIBAZAR.</item>
+        <item>HABIGANJ.</item>
+    </string-array>
+    <string-array name="Barishal_array">
+        <item>BARISAL.</item>
+        <item>PATUAKHALI.</item>
+        <item>PIROJPUR.</item>
+        <item>JHALOKATI.</item>
+        <item>BHOLA.</item>
+        <item>BARGUNA.</item>
+    </string-array>
+    <string-array name="Rangpur_array">
+        <item>RANGPUR.</item>
+        <item>DINAJPUR.</item>
+        <item>GAIBANDHA.</item>
+        <item>KURIGRAM.</item>
+        <item>LALMONIRHAT.</item>
+        <item>NILPHAMARI.</item>
+        <item>PANCHAGARH.</item>
+        <item>THAKURGAON.</item>
+    </string-array>
+    <string-array name="Khulna_array">
+        <item>KHULNA.</item>
+        <item>BAGERHAT.</item>
+        <item>CHUADANGA.</item>
+        <item>JESSORE.</item>
+        <item>JHENAIDAH.</item>
+        <item>KUSHTIA.</item>
+        <item>MAGURA.</item>
+        <item>MEHERPUR.</item>
+        <item>NARAIL.</item>
+        <item> SATKHIRA.</item>
+    </string-array>
+    <string-array name="Mymensingh_array">
+        <item>MYMENSINGH.</item>
+        <item>SHERPUR.</item>
+        <item>JAMALPUR.</item>
+        <item>NETROKONA.</item>
+    </string-array>
+
+
+    <string name="title_activity_place_details">PlaceDetailsActivity</string>
+    <string name="title_activity_comments">Comments</string>
+    <string name="action_comment">Comment</string>
+    <string name="action_refresh">Reload</string>
+    <!-- String for login and sing up page-->
+    <string name="hello_world">Hello world!</string>
+    <string name="email">Email Id</string>
+    <string name="passowrd">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="show_pwd">Show Password</string>
+    <string name="hide_pwd">Hide Password</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="closebutton">Close Button for Activity</string>
+    <string name="newUser">Not a Member yet? Sign Up here.</string>
+    <string name="fullName">Full Name</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="location">Location</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="terms_conditions">By clicking SignUp you agree all the Terms and Conditions.</string>
+    <string name="signUp">SIGN UP</string>
+    <string name="already_user">Already have Account? Login here.</string>
+    <string name="registered_emailid">Please enter your Registered Email Id below:</string>
+    <string name="submit">SUBMIT</string>
+    <string name="back">BACK</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_near_by">NearByActivity</string>
+    <string name="title_activity_share_experience">Tour Kit Forum</string>
+    <string name="title_activity_all_place">AllPlaceActivity</string>
+    <!-- end String for login and sing up page-->
+</resources>
