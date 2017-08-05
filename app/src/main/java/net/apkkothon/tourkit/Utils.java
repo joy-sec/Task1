@@ -1,8 +1,6 @@
 package net.apkkothon.tourkit;
 
-/**
- * Created by pappu on 7/31/17.
- */
+
 
 public class Utils {
     //Email Validation pattern

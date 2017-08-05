@@ -15,9 +15,7 @@ import net.apkkothon.tourkit.models.CommentModel;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by pappu on 7/30/17.
- */
+
 
 public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.MyViewHolder> {
     private Context context;

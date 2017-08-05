@@ -38,9 +38,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by joy on 8/4/17.
- */
 
 public class VehicleFragment extends Fragment {
     private RecyclerView recyclerView;

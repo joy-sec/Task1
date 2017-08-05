@@ -20,10 +20,6 @@ import net.apkkothon.tourkit.models.Place;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by joy on 7/27/17.
- */
-
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> {
 
     private Context context;

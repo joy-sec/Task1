@@ -1,8 +1,6 @@
 package net.apkkothon.tourkit.models;
 
-/**
- * Created by joy on 7/31/17.
- */
+
 
 public class NearByModel {
 

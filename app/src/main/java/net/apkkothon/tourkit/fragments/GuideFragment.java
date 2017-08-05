@@ -34,9 +34,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by joy on 7/29/17.
- */
+
 
 public class GuideFragment extends Fragment {
 
@@ -78,6 +76,11 @@ public class GuideFragment extends Fragment {
 
                         model.setName(jsonObject.getString("name"));
                         model.setlImage(jsonObject.getString("image"));
+                        model.setDescription(jsonObject.getString("description"));
+                        model.setLanguage(jsonObject.getString("language"));
+                        model.setDivision(jsonObject.getString("division"));
+                        model.setLicense(jsonObject.getString("Professional_License"));
+                        model.setPrice(jsonObject.getString("price"));
 
                         System.out.println(jsonObject.getString("image"));
 

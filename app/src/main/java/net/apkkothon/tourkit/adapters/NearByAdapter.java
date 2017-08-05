@@ -19,9 +19,6 @@ import net.apkkothon.tourkit.models.Place;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by joy on 7/31/17.
- */
 
 public class NearByAdapter extends RecyclerView.Adapter<NearByAdapter.MyViewHolder> {
 

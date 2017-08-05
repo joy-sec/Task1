@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.android.volley.DefaultRetryPolicy;
@@ -44,11 +45,13 @@ public class Comments extends AppCompatActivity {
     ProgressDialog progressDialog;
     String post_id,str_email,str_comment,str_time;
     SharedPreferences sharedPreferences;
+    ImageView close;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comments);
+        close= (ImageView) findViewById(R.id.close_activity);
         progressDialog=new ProgressDialog(Comments.this);
         progressDialog.setCancelable(false);
         progressDialog.setMessage("Loading...");
@@ -76,6 +79,12 @@ public class Comments extends AppCompatActivity {
                     finish();
                 }
 
+            }
+        });
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
 
@@ -193,5 +202,10 @@ public class Comments extends AppCompatActivity {
     public static String getTimeStamp() {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return format.format(new Date());
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 }

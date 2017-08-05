@@ -1,8 +1,6 @@
 package net.apkkothon.tourkit.fragments;
 
-/**
- * Created by pappu on 7/31/17.
- */
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;

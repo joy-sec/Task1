@@ -14,9 +14,6 @@ import net.apkkothon.tourkit.NearByActivity;
 import net.apkkothon.tourkit.R;
 import net.apkkothon.tourkit.adapters.HomeAdapter;
 
-/**
- * Created by joy on 7/31/17.
- */
 
 public class NearByFragment extends Fragment {
 

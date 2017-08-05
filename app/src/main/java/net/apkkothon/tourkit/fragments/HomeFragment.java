@@ -28,9 +28,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by joy on 7/26/17.
- */
+
 
 public class HomeFragment extends Fragment {
 

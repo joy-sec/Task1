@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp">
         <ImageView
-            android:id="@+id/close_activity_vehicle"
+            android:id="@+id/close_activity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_weight="1"
-                app:srcCompat="@mipmap/ic_launcher" />
+                app:srcCompat="@drawable/gide" />
 
             <android.support.v7.widget.CardView
                 android:layout_margin="10dp"
@@ -48,23 +48,25 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <TextView
-                        android:textSize="15sp"
-                        android:textColor="@color/colorPrimary"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Model   :"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                     <TextView
-                        android:textSize="14sp"
-                        android:id="@+id/car_model_details"
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name :"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pro_guide_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textSize="14sp" />
                     <TextView
                         android:textSize="15sp"
                         android:textColor="@color/colorPrimary"
@@ -75,13 +77,14 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                     <TextView
-                        android:textSize="14sp"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:id="@+id/car_description_details"
+                        android:id="@+id/description_details"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="14sp" />
+
                     <TextView
                         android:textSize="15sp"
                         android:textColor="@color/colorPrimary"
@@ -92,13 +95,13 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                     <TextView
-                        android:textSize="14sp"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:id="@+id/car_division_details"
+                        android:id="@+id/division"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="14sp" />
                     <TextView
                         android:textSize="15sp"
                         android:textColor="@color/colorPrimary"
@@ -109,9 +112,42 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                     <TextView
+                        android:id="@+id/price_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile No   :"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/mobile_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LANGUAGE   :"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                    <TextView
+                        android:id="@+id/language"
                         android:textSize="14sp"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:id="@+id/car_price_details"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -122,12 +158,13 @@
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobile No   :"
+                        android:text="Professional License  :"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
                     <TextView
+                        android:id="@+id/license"
                         android:textSize="14sp"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:id="@+id/car_mobile_details"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

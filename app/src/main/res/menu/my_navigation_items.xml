@@ -17,5 +17,9 @@
             android:icon="@drawable/ic_action_arrow"
             android:id="@+id/logout"
             android:title="Log out"/>
+        <item
+            android:icon="@drawable/ic_action_arrow"
+            android:id="@+id/Host"
+            android:title="Apply as host"/>
     </group>
 </menu>

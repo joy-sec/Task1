@@ -1,12 +1,49 @@
 package net.apkkothon.tourkit.models;
 
-/**
- * Created by joy on 7/29/17.
- */
 
 public class GuideModel {
+    public String getPrice() {
+        return price;
+    }
 
-    String name,description,image,lImage;
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+    public String getLicense() {
+        return license;
+    }
+
+    public String getDivision() {
+        return division;
+    }
+
+    public void setDivision(String division) {
+        this.division = division;
+    }
+
+    public void setLicense(String license) {
+        this.license = license;
+
+    }
+
+    String name,description,image,lImage,price,mobile,language,license,division;
 
     public String getName() {
         return name;

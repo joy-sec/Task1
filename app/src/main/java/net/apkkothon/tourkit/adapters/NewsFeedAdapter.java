@@ -1,6 +1,7 @@
 package net.apkkothon.tourkit.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.ActionBarOverlayLayout;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,15 +13,13 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import net.apkkothon.tourkit.ExperienceDetails;
 import net.apkkothon.tourkit.R;
 import net.apkkothon.tourkit.models.NewsFeedModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by pappu on 8/1/17.
- */
 
 public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.MyViewHolder> {
     private Context context;
@@ -41,7 +40,7 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.MyView
     @Override
     public void onBindViewHolder(final NewsFeedAdapter.MyViewHolder holder, int position) {
 
-        NewsFeedModel model=list.get(position);
+        final NewsFeedModel model=list.get(position);
 
        holder.p_name.setText(model.getProfileName());
         holder.mgs.setText(model.getFeedMgs());
@@ -55,6 +54,14 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.MyView
         holder.continue_reading.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent= new Intent(context, ExperienceDetails.class);
+                intent.putExtra("name",model.getProfileName());
+                intent.putExtra("profile_image",model.getProfileImage());
+                intent.putExtra("time",model.getTime());
+                intent.putExtra("mgs",model.getFeedMgs());
+                intent.putExtra("feed_image",model.getFeedImage());
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
 
             }
         });
@@ -68,7 +75,7 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.MyView
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView p_name,time,mgs,continue_reading;
+        public TextView p_name,time,mgs,continue_reading,total_comment;
         ImageView p_image,f_image;
         ArrayList<NewsFeedModel> list = new ArrayList<>();
         Context context;
@@ -86,6 +93,7 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.MyView
             p_image= (ImageView) itemView.findViewById(R.id.profilePic);
             f_image= (ImageView) itemView.findViewById(R.id.feedImage1);
             continue_reading= (TextView) itemView.findViewById(R.id.continue_reading);
+            total_comment= (TextView) itemView.findViewById(R.id.foram_comment);
 
 
 

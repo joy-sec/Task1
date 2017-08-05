@@ -17,9 +17,6 @@ import net.apkkothon.tourkit.MapsActivity;
 import net.apkkothon.tourkit.PlaceDetailsActivity;
 import net.apkkothon.tourkit.R;
 
-/**
- * Created by joy on 7/28/17.
- */
 
 public class PlaceDetailsFragment extends Fragment {
 

@@ -2,9 +2,7 @@ package net.apkkothon.tourkit.fragments;
 
 
 
-/**
- * Created by pappu on 7/31/17.
- */
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;

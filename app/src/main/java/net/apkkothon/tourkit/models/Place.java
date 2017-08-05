@@ -1,8 +1,6 @@
 package net.apkkothon.tourkit.models;
 
-/**
- * Created by joy on 7/27/17.
- */
+
 
 public class Place {
     String postID,placeName,placeDetails,placeImage,placeDistrict,placeDivision,placeLat,placeLon;

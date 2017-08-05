@@ -20,9 +20,7 @@ import net.apkkothon.tourkit.models.Place;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by joy on 8/3/17.
- */
+
 
 public class SavedAdapter extends RecyclerView.Adapter<SavedAdapter.MyViewHolder> {
 

@@ -1,8 +1,6 @@
 package net.apkkothon.tourkit.models;
 
-/**
- * Created by pappu on 8/1/17.
- */
+
 
 public class NewsFeedModel {
     private String profileName;

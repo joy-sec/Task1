@@ -109,6 +109,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.logout:
                         logout();
                         break;
+                    case R.id.Host:
+                        host();
+                        break;
 
                 }
 
@@ -239,5 +242,9 @@ public class MainActivity extends AppCompatActivity {
         navigationView.getMenu().getItem(2).setVisible(false);
         Toast.makeText(MainActivity.this,"You are logged out",Toast.LENGTH_LONG).show();
 
+    }
+    void host(){
+        Intent intent=new Intent(MainActivity.this,HostApplyFrom.class);
+        startActivity(intent);
     }
 }

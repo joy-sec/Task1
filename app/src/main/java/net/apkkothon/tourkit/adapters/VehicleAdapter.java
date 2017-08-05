@@ -18,9 +18,7 @@ import net.apkkothon.tourkit.models.VehicleModel;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by joy on 8/4/17.
- */
+
 
 public class VehicleAdapter  extends RecyclerView.Adapter<VehicleAdapter.MyViewHolder> {
 
@@ -42,12 +40,12 @@ public class VehicleAdapter  extends RecyclerView.Adapter<VehicleAdapter.MyViewH
 
     @Override
     public void onBindViewHolder(VehicleAdapter.MyViewHolder holder, int position) {
+
+
         VehicleModel postmodel=list.get(position);
         holder.model.setText(postmodel.getCar_model());
         holder.division.setText(postmodel.getDivision());
         Picasso.with(context).load(postmodel.getImage()).into(holder.carImage);
-
-
 
     }
 
@@ -97,8 +95,6 @@ public class VehicleAdapter  extends RecyclerView.Adapter<VehicleAdapter.MyViewH
 
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
-
-
 
         }
     }

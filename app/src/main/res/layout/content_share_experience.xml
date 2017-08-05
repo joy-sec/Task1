@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFAB91"
+    android:background="#ffffff"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="net.apkkothon.tourkit.ShareExperience"
@@ -23,7 +23,7 @@
             android:background="@drawable/bg_parent_rounded_corner"
             android:layout_height="60dp">
             <LinearLayout
-                android:background="#E1E1E1"
+                android:background="#FFAB91"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -31,10 +31,10 @@
                     android:id="@+id/profile_image"
                     android:layout_width="54dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/profile" />
+                    app:srcCompat="@mipmap/ic_launcher" />
                 <TextView
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="25dp"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
                     android:layout_marginLeft="30dp"
                     android:layout_gravity="center"
                     android:text="Share You'r Experience"
@@ -117,7 +117,7 @@
                         android:layout_height="35dp"
                         android:background="@drawable/round_button"
                         android:text="choose image"
-                        ></Button>
+                        />
                     <TextView
                         android:layout_marginLeft="10dp"
                         android:background="#000"

@@ -11,17 +11,16 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import net.apkkothon.tourkit.GuideProfile;
 import net.apkkothon.tourkit.PlaceDetailsActivity;
 import net.apkkothon.tourkit.R;
+import net.apkkothon.tourkit.VehicleDetails;
 import net.apkkothon.tourkit.models.GuideModel;
 import net.apkkothon.tourkit.models.Place;
+import net.apkkothon.tourkit.models.VehicleModel;
 
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * Created by joy on 7/30/17.
- */
 
 public class GuideAdapter extends RecyclerView.Adapter<GuideAdapter.MyViewHolder> {
 
@@ -47,7 +46,7 @@ public class GuideAdapter extends RecyclerView.Adapter<GuideAdapter.MyViewHolder
         GuideModel model=list.get(position);
 
         holder.name.setText(model.getName());
-        Picasso.with(context).load(model.getImage()).into(holder.gideImage);
+        //Picasso.with(context).load(model.getImage()).into(holder.gideImage);
 
     }
 
@@ -82,12 +81,21 @@ public class GuideAdapter extends RecyclerView.Adapter<GuideAdapter.MyViewHolder
 
             int position=getAdapterPosition();
 
-            GuideModel model=this.list.get(position);
+            GuideModel homeModel=this.list.get(position);
 
-           /* Intent intent=new Intent(this.context, PlaceDetailsActivity.class);
+            Intent intent=new Intent(this.context, GuideProfile.class);
+
+            intent.putExtra("name",homeModel.getName());
+           // intent.putExtra("image",homeModel.getImage());
+            intent.putExtra("description",homeModel.getDescription());
+            intent.putExtra("division",homeModel.getDivision());
+            intent.putExtra("price",homeModel.getPrice());
+            intent.putExtra("mobile",homeModel.getMobile());
+            intent.putExtra("language",homeModel.getPrice());
+            intent.putExtra("license",homeModel.getLicense());
 
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.startActivity(intent);*/
+            context.startActivity(intent);
 
         }
     }

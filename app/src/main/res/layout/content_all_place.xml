@@ -10,6 +10,7 @@
     tools:showIn="@layout/activity_all_place">
 
     <LinearLayout
+        android:id="@+id/llayout"
         android:padding="10dp"
         android:orientation="horizontal"
         android:layout_width="368dp"

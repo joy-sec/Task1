@@ -1,135 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/colorPrimary"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/image_profile_frag"
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:id="@+id/scrrolView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/colorPrimary"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            app:srcCompat="@drawable/profile_test" />
+            android:layout_height="wrap_content">
 
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_menu_edit"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="22dp"
-            android:layout_marginEnd="22dp"
-            android:layout_marginTop="216dp" />
+            <ImageView
+                android:id="@+id/image_profile_frag"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/profile_test" />
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical"
-            android:padding="20dp"
-            android:layout_below="@+id/image_profile_frag"
-            >
-            <TextView
-                android:layout_width="fill_parent"
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="Profile details"
-                android:textColor="@color/white_greyish"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+                app:srcCompat="@android:drawable/ic_menu_edit"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="22dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginTop="216dp" />
 
-            <TextView
-                android:id="@+id/fullName"
+            <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/transparent"
-                android:drawableLeft="@drawable/user"
-                android:drawablePadding="8dp"
-                android:gravity="center_vertical"
-                android:inputType="textCapWords"
-                android:padding="10dp"
-                android:singleLine="true"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                android:textSize="16sp" />
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_below="@+id/image_profile_frag"
+                >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Profile details"
+                    android:textColor="@color/white_greyish"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
 
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1px"
-                android:background="@color/white_greyish" />
+                <TextView
+                    android:id="@+id/fullName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/userEmailId"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@android:color/transparent"
-                android:drawableLeft="@drawable/email"
-                android:drawablePadding="8dp"
-                android:gravity="center_vertical"
-                android:padding="10dp"
-                android:singleLine="true"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                android:textSize="16sp" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/white_greyish" />
 
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1px"
-                android:background="@color/white_greyish" />
+                <TextView
+                    android:id="@+id/userEmailId"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/mobileNumber"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@android:color/transparent"
-                android:drawableLeft="@drawable/phone"
-                android:drawablePadding="8dp"
-                android:gravity="center_vertical"
-                android:padding="10dp"
-                android:singleLine="true"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                android:textSize="16sp" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/white_greyish" />
 
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1px"
-                android:background="@color/white_greyish" />
+                <TextView
+                    android:id="@+id/mobileNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/location"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@android:color/transparent"
-                android:drawableLeft="@drawable/location"
-                android:drawablePadding="8dp"
-                android:gravity="center_vertical"
-                android:padding="10dp"
-                android:singleLine="true"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                android:textSize="16sp" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/white_greyish" />
 
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1px"
-                android:background="@color/white_greyish" />
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/location"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
 
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/white_greyish" />
+            </LinearLayout>
 
-        </LinearLayout>
+        </RelativeLayout>
 
-    </RelativeLayout>
+    </ScrollView>
 
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:text="Please Login To See Your Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-</ScrollView>
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/login"
+            android:clickable="true"
+            android:text="Click Here"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
+

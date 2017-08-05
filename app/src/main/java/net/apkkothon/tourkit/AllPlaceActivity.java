@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 import com.android.volley.AuthFailureError;
@@ -42,6 +43,7 @@ public class AllPlaceActivity extends AppCompatActivity implements AdapterView.O
     private String str_division,str_district;
     private HomeAdapter homeAdapter;
     private List<Place> list=new ArrayList<>();
+    private LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,16 +52,18 @@ public class AllPlaceActivity extends AppCompatActivity implements AdapterView.O
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        linearLayout=(LinearLayout) findViewById(R.id.llayout);
+        linearLayout.setVisibility(View.GONE);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                linearLayout.setVisibility(View.VISIBLE);
             }
         });
 
         filter=(Button)findViewById(R.id.filter);
+
 
         recyclerView=(RecyclerView)findViewById(R.id.recyclerView);
         homeAdapter=new HomeAdapter(this,list);
@@ -260,4 +264,10 @@ public class AllPlaceActivity extends AppCompatActivity implements AdapterView.O
         Volley.newRequestQueue(this).add(request);
 
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
+
 }

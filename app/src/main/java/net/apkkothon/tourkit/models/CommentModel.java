@@ -1,8 +1,6 @@
 package net.apkkothon.tourkit.models;
 
-/**
- * Created by pappu on 7/30/17.
- */
+
 
 public class CommentModel {
     String image,name,comment,time;

@@ -1,8 +1,6 @@
 package net.apkkothon.tourkit.models;
 
-/**
- * Created by pappu on 8/4/17.
- */
+
 
 public class VehicleModel {
     String car_model,car_description,price,image,mobile,division;
